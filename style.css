@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+}
+
+html{
+    scroll-behavior: smooth;
+    scroll-padding-top: 30px;
+}
+
+.navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0px 7%;
+    background: rgba(0,0,0,.6);
+    background-color: #fff;
+    height: 70px;
+}
+
+.navbar>h1{
+    color: #5ce408;
+    cursor: pointer;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.links a{
+    color: rgb(15, 0, 0);
+    color: rgb(10, 105, 7);
+    position: relative;
+    padding:10px 20px;
+    z-index: 10;
+}
+ 
+/*.links a.active{
+    color: blue;
+} */
+
+a{
+    text-decoration: none;
+    font-weight: 400;
+    letter-spacing: 1px;
+}
+
+.links a::after{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3f910d93;
+    height: 0%;
+    transition: .3s linear;
+    z-index: -1;
+}
+
+.links a:hover::after{
+    height: 100%;
+}
+
+/* header starts */
+
+.header{
+    width: 100%;
+    height: calc(100vh - 60px);
+    background-image: linear-gradient(to right, rgba(0, 0, 0, 0.032), rgba(0, 0, 0, 0.962)), url(bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    color: #fff;
+}
+
+.content{
+    position: absolute;
+    top: 25%;
+    right: 20%;
+}
+
+.content .org100{
+    font-size: 8rem;
+    font-family: cursive;
+    cursor: pointer;
+    transition: all 0.3s ease-in-out;
+}
+
+.content .org100:hover{
+    /* font-weight: 300; */
+    scale: 1,2;
+}
+
+.content .dots span{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    border-radius: 50%;
+    display: inline-block;
+    margin: 0 5px;
+}
+
+.active{
+    background-color: #63ff0193 !important;
+}
+
+.content h1{
+    padding: 10px 0;
+}
+
+.content p{
+    padding: 5px 0 15px;
+    font-size: 20px;
+}
+
+.content button{
+    padding: 10px 30px;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: .3s linear;
+}
+
+.activebtn{
+    background-color: #49812693;
+    color: white;
+    margin: 0 10px;
+}
+
+.activebtn:hover{
+    background-color: white;
+    color: black;
+}
+.dots{
+    padding-top: 20px;
+    text-align: end;
+}
+
+.btn{
+    padding: 10px 20px;
+    background-color: #0ea919;
+    color: white;
+    font-size: 20px;
+    margin: 20px 0;
+}
+
+/* about starts  */
+
+.about{
+    width: 100%;
+    height: 400px;
+    text-align: center;
+    color: #ffffff;
+    background-image: url(vegi2.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.about .aboutfloat{
+    width: 100%;
+    padding: 5rem 15rem;
+}
+
+.about .heading{
+    position: relative;
+    margin-bottom: 20px;
+}
+
+.about .heading::after{
+    top: 100%;
+}
+
+/* second starts */
+
+.section{
+    text-align: center;
+}
+
+.section .heading{
+    position: relative;
+}
+
+.heading::after{
+    content: "";
+    position:absolute;
+    left: 47%;
+    bottom: 0;
+    width: 5%;
+    border-radius: 10px;
+    height: 5px;
+    background-color: #265c05e2;   
+}
+
+#second{
+    background-color: #d1d3d1;
+    color: rgb(0, 0, 0);
+    padding: 20px;
+}
+
+#second h1::after{
+    background-color: rgb(35, 235, 9);
+}
+
+.container{
+    margin-top: 1rem;
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: auto auto;
+    justify-content: center;
+    align-content: center;
+    gap: 20px;
+}
+
+.card{
+    text-align: center;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    padding: 2rem;
+}
+
+.card p{
+    width: 100%;
+}
+
+.card .icon i{
+    font-size: 60px;
+    transition: .5s linear;
+    color: #255408;
+}
+
+.card:hover .icon i{
+    color: #5ce408;
+}
+
+/* footer start */
+
+
+footer{
+    color: rgb(0, 255, 34);
+    padding: 2vw 0;
+    display: flex;
+    justify-content: space-evenly;
+    cursor: pointer;
+    background-color:rgb(25, 139, 40);
+    background-image: url(vegi.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+footer .foot{
+    width: 20%;
+    height: 100%;
+    /* border: 2px solid red; */
+}
+  
+footer .foot h2{
+    text-transform: uppercase;
+    margin-bottom: 15px;
+
+}
+
+footer .foot ul li{
+    list-style-type: none;
+    line-height: 25px;
+    display: block;
+}
+
+.foontIcon i{
+    margin-right: 10px;
+}
+
+.foot input{
+    border-radius: 30px;
+    height: 2.5vw;
+    outline: none;
+    border: none;
+    padding-left: 0px;
+}
+
+.foot input::placeholder{
+    padding-left: 10px;
+    font-size: 1.3vw;
+    padding-left: 1.5vw;
+    color: black;
+}
+
+.foot input:focus{
+    outline: none;
+    border: 4px solid rgb(0, 255, 34);
+}
+
+.foot li button{
+    margin-top: 10px;
+    padding: 0.5vw 2vw;
+    font-weight: 600;
+    background-color: yellow;
+    color: white;
+    color: black;
+    border-radius: 40px;
+    font-size: 1.5vw;
+}
+
+footer h2:hover{
+    transform: scale(1.1);
+    transition: all 3s;
+}
+  
+footer .foot li:hover{
+    transform: scale(1.1);
+    transition: all 3s;
+}
+
+/* footer ends  */
