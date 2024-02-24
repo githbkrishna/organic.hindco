@@ -265,7 +265,6 @@ footer .foot{
 footer .foot h2{
     text-transform: uppercase;
     margin-bottom: 15px;
-
 }
 
 footer .foot ul li{
@@ -279,6 +278,7 @@ footer .foot ul li{
 }
 
 .foot input{
+    width: 100%;
     border-radius: 30px;
     height: 2.5vw;
     outline: none;
@@ -320,3 +320,133 @@ footer .foot li:hover{
 }
 
 /* footer ends  */
+
+
+
+/* responsive */
+
+@media (max-width:768px) {
+    .navbar{
+        width: 100%;
+        padding: 0px 3%;
+    }
+    .links{
+        gap: 10px;
+    }
+    .links a{
+        padding:5px 10px;
+        font-size: 2vw;
+    }
+
+    /* about */
+    .content .org100{
+        font-size: 11vw;
+    }
+    .about .heading{
+        font-size: 3vw;
+    }
+    .about .heading::after{
+        width: 10%;
+    }
+    .about p{
+        font-size: 1.9vw;
+    }
+    .about .btn{
+        font-size: 2vw;
+        padding: 1vw;
+    }
+
+    /* second */
+    #second .heading{
+        font-size: 3vw;
+    }
+    #second .heading::after{
+        bottom: -5px;
+    }
+    .section .card{
+        padding: 1vw;
+    }
+    .section .card i{
+        font-size: 5vw;
+    }
+    .section .card h1{
+        font-size: 3vw;
+    }
+    .section .card p{
+        font-size: 2vw;
+    }
+
+    /* footer  */
+    .foot h2{
+        font-size: 2vw;
+        margin-left: 4vw;
+    }
+}
+
+
+
+@media (max-width:425px) {
+    .navbar .links{
+        display: none;
+    }
+    
+    /* about */
+    .content{
+        width: 100%;
+        left: 15%;
+    }
+    .content .org100{
+        font-size: 4vw;
+    }
+    .content .dots{
+        display: none;
+    }
+    .content button{
+        font-size: 2vw;
+        padding: 5px 10px;
+    }
+
+    /* about  */
+    .about .aboutfloat{
+        padding: 8rem 5vw;
+    }    
+    .aboutfloat .heading{
+        font-size: 5vw;
+    }    
+    .aboutfloat p{
+        font-size: 4vw;
+    }    
+    .aboutfloat  .btn{
+        font-size: 4vw;
+    }
+
+    /* second  */
+    #second .container{
+        grid-template-columns: 90%;
+        grid-template-rows: auto auto;
+    }
+    #second .container i{
+        font-size: 7vw;
+    }
+    #second .container h1{
+        font-size: 5vw;
+    }
+    #second .container p{
+        font-size: 3vw;
+    }
+
+    /* footer */
+    footer{
+        flex-wrap: wrap;
+    }
+    footer .foot{
+        width: 45%;
+    }
+    .foot h2{
+        font-size: 4vw;
+        margin-left: 5vw;
+    }
+    .foot li{
+        font-size: 3vw;
+    }
+}
